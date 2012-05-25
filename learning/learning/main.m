@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FirstClass.h"
 
 int main(int argc, const char * argv[])
 {
@@ -21,6 +22,12 @@ int main(int argc, const char * argv[])
         NSLog(@"Hello, World!");
         NSLog(@"%d", a * b);
         NSLog(@"%f", f * f);
+        
+        FirstClass* first = [[FirstClass alloc] init];
+        
+        [first meh];
+        
+        [first release];
         
     }
     return 0;
