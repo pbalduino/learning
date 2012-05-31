@@ -15,4 +15,9 @@
     return @"meh";
 }
 
+-(NSString *) foo: (int)bar;
+{
+    return bar < 0 ? @"negative" : @"positive";
+}
+
 @end

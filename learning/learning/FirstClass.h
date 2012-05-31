@@ -13,5 +13,6 @@
 }
 
 -(NSString*) meh;
+-(NSString*) foo: (int)bar;
 
 @end

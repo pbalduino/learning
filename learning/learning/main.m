@@ -16,6 +16,8 @@ int main(int argc, const char * argv[])
         int a = 3;
         int b = 5;
         
+        BOOL c = TRUE;
+        
         float f = 3;
         
         // insert code here...
@@ -26,6 +28,12 @@ int main(int argc, const char * argv[])
         FirstClass* first = [[FirstClass alloc] init];
         
         [first meh];
+        
+        NSLog(@"%@", [first foo: (int)10]);       
+        
+        NSLog(@"%@", [first foo: (int)-10]);   
+        
+        NSLog(@"%@", c ? "true" : "false");
         
         [first release];
         
